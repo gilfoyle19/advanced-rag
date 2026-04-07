@@ -10,6 +10,7 @@ dependencies = [
     "isort>=8.0.1",
     "langchain>=1.2.15",
     "langchain-chroma>=1.1.0",
+    "langchain-classic>=1.0.3",
     "langchain-community>=0.4.1",
     "langchain-google-genai>=4.2.1",
     "langchain-huggingface>=1.2.1",

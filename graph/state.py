@@ -1,6 +1,7 @@
 from typing import List, TypedDict
 
-class State(TypedDict):
+
+class GraphState(TypedDict):
     """
     Represents the state of our graph.
     question:question
