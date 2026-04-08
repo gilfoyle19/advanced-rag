@@ -169,19 +169,6 @@ If you encounter `ImportError: cannot import name 'grade_documents'`:
 - Ensure the `.chroma` directory exists or run `ingestion.py` to create it
 - Check that HuggingFace embeddings are downloaded
 
-## Future Enhancements
 
-- [ ] Support for multiple vector stores
-- [ ] Caching for frequently asked questions
-- [ ] Fine-tuning for domain-specific tasks
-- [ ] Multi-turn conversation support
-- [ ] Metrics and evaluation dashboard
-- [ ] Support for various document formats (PDF, DOCX, etc.)
 
-## License
 
-[Add license information]
-
-## Contributing
-
-[Add contribution guidelines]
