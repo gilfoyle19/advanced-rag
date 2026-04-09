@@ -14,7 +14,7 @@ class RouteQuery(BaseModel):
     )
 
 
-llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0.0)
+llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0.0)
 structured_llm_router = llm.with_structured_output(RouteQuery)
 
 system = """You are an expert at routing a user question to a vectorstore or web search.

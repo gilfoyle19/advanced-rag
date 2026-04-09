@@ -3,7 +3,7 @@ from langchain_core.runnables import RunnableSequence
 from langchain_google_genai import ChatGoogleGenerativeAI
 from pydantic import BaseModel, Field
 
-llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0.0)
+llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0.0)
 
 
 
