@@ -1,10 +1,10 @@
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnableSequence
-from langchain_google_genai import ChatGoogleGenerativeAI
 from pydantic import BaseModel, Field
+from graph.chains.llm import get_llm
 
-llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0.0)
 
+llm = get_llm()
 
 
 class GradeHallucinations(BaseModel):

@@ -1,9 +1,10 @@
 from pydantic import BaseModel, Field
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.prompts import ChatPromptTemplate
+from graph.chains.llm import get_llm
 
-llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0.0)
-
+#llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0.0)
+llm = get_llm()
 
 class GradeDocuments(BaseModel):
     """Binary score whether the document is relevant to the question, yes or no

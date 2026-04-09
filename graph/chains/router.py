@@ -1,8 +1,8 @@
 from typing import Literal
 
 from langchain_core.prompts import ChatPromptTemplate
-from langchain_google_genai import ChatGoogleGenerativeAI
 from pydantic import BaseModel, Field
+from graph.chains.llm import get_llm
 
 
 class RouteQuery(BaseModel):
@@ -14,7 +14,8 @@ class RouteQuery(BaseModel):
     )
 
 
-llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0.0)
+
+llm = get_llm()
 structured_llm_router = llm.with_structured_output(RouteQuery)
 
 system = """You are an expert at routing a user question to a vectorstore or web search.
